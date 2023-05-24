@@ -1,0 +1,92 @@
+body {
+  background-color: #1B172B;
+}
+
+.tictactoe-container {
+   background-color: #1B172B;
+   width: 75vh;
+   height: auto;
+   position: absolute;
+   left: 50%;
+   top: 20%;
+   transform: translate(-50%, -20%);
+}
+
+.tictactoe-container{
+  font-size: 1%;
+}
+
+.grid-container {
+   background-color: #22252D;
+   display: inline-grid;
+   width: auto;
+   height: auto;
+   grid-gap: 1vh;
+   grid-template-columns: repeat(3, 25vh);
+   grid-template-rows: repeat(3, 25vh);
+}
+
+.grid-item {
+   background-color: #353A47;
+   color: #F0F7EE;
+   display: flex;
+   cursor: pointer;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Varela Round', sans-serif;
+   font-weight: bold;
+   font-size: 25vh;
+}
+
+.record {
+   color: #F0F7EE;
+   font-weight: bold;
+   text-align: center;
+   font-family: 'Varela Round', sans-serif;
+   font-size: 10vh;
+   white-space: nowrap;
+   margin: 2vh auto;
+}
+
+.ai-select {
+   color: #F0F7EE;
+   background-color: #353A47;
+   font-size: 3vh;
+   width: 40%;
+   height: 15%;
+   margin: 1vh 30%;
+}
+
+.win {
+   color: #15b3ab;
+   animation-iteration-count: 3;
+}
+
+.draw {
+   color: #b31544;
+   animation-iteration-count: 6;
+}
+
+@media screen and (orientation:portrait) {
+   .tictactoe-container {
+       width: 77vw;
+   }
+
+   .grid-container {
+       grid-gap: 1vw;
+       grid-template-columns: repeat(3, 25vw);
+       grid-template-rows: repeat(3, 25vw);
+   }
+
+   .grid-item {
+       font-size: 25vw;
+   }
+   
+   .record {
+       font-size: 10vw;
+   }
+
+   .ai-select {
+       font-size: 3vw;
+   }
+}
